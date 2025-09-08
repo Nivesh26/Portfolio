@@ -18,8 +18,9 @@ const Home = () => {
       <Experience />
       <Contact />
       <Footer />
-    </div>
+    </div> 
   );
 };
 
 export default Home;
+

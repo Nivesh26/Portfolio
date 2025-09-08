@@ -16,7 +16,7 @@ import {
   SiSass,
   SiGithub,
   SiNextdotjs,
-  SiDsautomobiles,
+
 } from "react-icons/si";
 import { motion } from "framer-motion";
 

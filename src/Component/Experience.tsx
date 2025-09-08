@@ -13,7 +13,7 @@ const experiences = [
     ],
   },
   {
-    title: "UI/UX Training",
+    title: "UI/UX ",
     company: "NAXA",
     points: [
       "User Research and Analysis",

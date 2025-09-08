@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Link } from "react-scroll"; // ✅ import Link
+import { Link } from "react-scroll"; 
 
 const Hero = () => {
   return (
@@ -7,7 +7,7 @@ const Hero = () => {
       id="home"
       className="h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-gray-50 to-white"
     >
-      {/* Main Content */}
+      
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -27,7 +27,7 @@ const Hero = () => {
         </p>
 
         <div className="flex justify-center gap-4">
-          {/* Smooth Scroll Button */}
+          
           <Link
             to="contact"
             smooth={true}
@@ -40,7 +40,6 @@ const Hero = () => {
         </div>
       </motion.div>
 
-      {/* Subtle blurred shapes for background */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse-slow"></div>
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-pink-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse-slow"></div>
     </section>

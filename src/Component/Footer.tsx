@@ -2,9 +2,9 @@ import { SiGithub, SiLinkedin, SiInstagram } from "react-icons/si";
 
 const Footer = () => {
   const socialLinks = [
-    { icon: <SiGithub />, href: "https://github.com/yourusername" },
-    { icon: <SiLinkedin />, href: "https://linkedin.com/in/yourusername" },
-    { icon: <SiInstagram />, href: "https://instagram.com/yourusername" },
+    { icon: <SiGithub />, href: "https://github.com/Nivesh26" },
+    { icon: <SiLinkedin />, href: "https://www.linkedin.com/in/nivesh-shrestha-6318b8282/" },
+    { icon: <SiInstagram />, href: "https://instagram.com/who_is_niv" },
   ];
 
   return (

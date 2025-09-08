@@ -16,19 +16,29 @@ const Header = () => {
   ];
 
   const socialLinks = [
-    { icon: <SiGithub />, href: "https://github.com/yourusername" },
-    { icon: <SiLinkedin />, href: "https://linkedin.com/in/yourusername" },
-    { icon: <SiInstagram />, href: "https://instagram.com/yourusername" },
+    { icon: <SiGithub />, href: "https://github.com/Nivesh26" },
+    { icon: <SiLinkedin />, href: "https://www.linkedin.com/in/nivesh-shrestha-6318b8282/" },
+    { icon: <SiInstagram />, href: "https://instagram.com/who_is_niv " },
   ];
 
   return (
     <header className="fixed w-full top-0 bg-white shadow z-50">
       <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
-        <h1 className="text-2xl font-bold text-gray-800">
-          Nivesh<span className="text-blue-500"></span>
+        {/* Logo that scrolls to Home */}
+        <h1 className="text-2xl font-bold text-gray-800 cursor-pointer">
+          <Link
+            to="home"
+            smooth={true}
+            duration={600}
+            offset={-70}
+            onClick={() => setMenuOpen(false)}
+            className="cursor-pointer"
+          >
+            Nivesh<span className="text-blue-500"></span>
+          </Link>
         </h1>
 
-        {/* Desktop Menu */}
+        {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-6 font-medium">
           {navLinks.map((link, idx) => (
             <Link
@@ -44,7 +54,7 @@ const Header = () => {
           ))}
         </nav>
 
-        {/* Mobile Hamburger */}
+        {/* Mobile Menu Button */}
         <button
           className="md:hidden z-50"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -53,7 +63,7 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Mobile Menu Overlay */}
+      {/* Overlay */}
       <div
         className={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-40 transition-opacity duration-300 ${
           menuOpen
@@ -63,7 +73,7 @@ const Header = () => {
         onClick={() => setMenuOpen(false)}
       ></div>
 
-      {/* Mobile Menu Panel (Slide from right) */}
+      {/* Mobile Menu */}
       <div
         className={`fixed top-0 right-0 w-64 h-full bg-white shadow-lg p-8 flex flex-col items-center space-y-6 transform transition-transform duration-300 ${
           menuOpen ? "translate-x-0" : "translate-x-full"
@@ -83,7 +93,6 @@ const Header = () => {
           </Link>
         ))}
 
-        {/* Social Icons */}
         <div className="flex space-x-6 mt-4">
           {socialLinks.map((social, idx) => (
             <a

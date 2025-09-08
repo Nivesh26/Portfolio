@@ -1,25 +1,25 @@
 import { motion } from "framer-motion";
-import { Link } from "react-scroll"; // ✅ add this
+import { Link } from "react-scroll";
 import profile from "../assets/Nivesh.jpg";
 
 const About = () => {
   const education = [
     {
-      degree: "+2",
+      degree: "Higher Secondary Education",
       school: "United Academy",
-      year: "2022 A.D Pass Out",
+      year: "2020 A.D - 2022 A.D",
     },
     {
       degree: "Bachelor of Information and Communication Technology (BICT)",
       school: "Asia e University",
-      year: "2022 A.D - Present",
+      year: "2022 A.D - 2026 A.D",
     },
   ];
 
   return (
     <section id="about" className="py-20 bg-gradient-to-b from-gray-50 to-white">
-      <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-12">
-        {/* Profile Image on Left */}
+      <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-start md:space-x-12">
+      
         <motion.div
           className="mb-8 md:mb-0 md:w-1/3 flex justify-center"
           initial={{ opacity: 0, x: -50 }}
@@ -30,11 +30,10 @@ const About = () => {
           <img
             src={profile}
             alt="Nivesh Shrestha"
-            className="rounded-full w-48 h-48 object-cover shadow-lg hover:scale-105 transition-transform"
+            className="rounded-2xl w-64 h-[500px] object-cover shadow-xl hover:scale-105 transition-transform mt-9"
           />
         </motion.div>
 
-        {/* Text Content on Right */}
         <div className="md:w-2/3 text-center md:text-left">
           <motion.h2
             className="text-4xl font-bold text-gray-800 mb-6"
@@ -72,7 +71,6 @@ const About = () => {
             digital products that are visually stunning and technically robust.
           </motion.p>
 
-          {/* Education Section */}
           <motion.div
             className="bg-gray-50 p-6 rounded-xl shadow space-y-4 mb-6"
             initial={{ opacity: 0, y: 20 }}
@@ -90,7 +88,7 @@ const About = () => {
             ))}
           </motion.div>
 
-          {/* Smooth Scroll CTA Button */}
+         
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

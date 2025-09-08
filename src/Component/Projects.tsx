@@ -1,26 +1,32 @@
 import { motion } from "framer-motion";
 import { SiGithub } from "react-icons/si";
+import GMW from "../assets/GMW.svg"
+import JealousCatch from "../assets/The_Jealous_Catch.svg"
+import Figma from "../assets/Figmaa.svg"
 
 const projects = [
   {
-    title: "Portfolio Website",
-    description: "A personal portfolio website showcasing UI/UX and React skills.",
-    image: "/projects/portfolio.png",
-    github: "",
-  },
+    title: "General Mechanical Works",
+    description: "A React-based web application for booking motorbike servicing, scheduling maintenance, and purchasing bike parts online, featuring a user-friendly interface and seamless online payment integration.",
+    image: GMW,
+    github: "https://github.com/Nivesh26/GMW-React-Project",
+  },  
+  
   {
-    title: "E-commerce App",
-    description: "A MERN stack e-commerce application with product listing and cart.",
-    image: "/projects/ecommerce.png",
-    github: "",
+    title: "The Jealous Catch",
+    description: "The Jealous Catch is a stylish watch brand showcased through a sleek HTML/CSS frontend and powered by a Java Spring Boot backend with MySQL database support.",
+    image: JealousCatch,
+    github: "https://github.com/Nivesh26/Advance-Java-Project",
   },
+
   {
-    title: "Task Manager",
-    description: "A task management app built with React and Node.js for productivity.",
-    image: "/projects/taskmanager.png",
-    github: "",
+    title: "Online Clothing Brand",
+    description: "An online clothing brand designed in Figma with a modern and user-friendly interface.",
+    image: Figma,
+   
   },
-  // Add more projects here
+  
+
 ];
 
 const Projects = () => {
@@ -55,12 +61,11 @@ const Projects = () => {
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-blue-500 mb-2">{project.title}</h3>
                 <p className="text-gray-600 mb-4">{project.description}</p>
-                <div className="flex space-x-4">
+                <div className="flex space-x-4 ">
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-800 hover:text-gray-900 text-2xl transition"
                   >
                     <SiGithub />
                   </a>

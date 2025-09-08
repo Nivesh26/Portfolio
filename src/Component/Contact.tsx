@@ -5,7 +5,7 @@ const contactInfo = [
   {
     icon: <Phone className="text-blue-500 w-6 h-6" />,
     title: "Phone",
-    detail: "9849925390",
+    detail: "+977 9849925390",
   },
   {
     icon: <Mail className="text-blue-500 w-6 h-6" />,
@@ -37,7 +37,6 @@ const Contact = () => {
         </motion.h2>
 
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Contact Info */}
           <div className="space-y-6">
             {contactInfo.map((info, idx) => (
               <div
@@ -53,8 +52,10 @@ const Contact = () => {
             ))}
           </div>
 
-          {/* Contact Form */}
           <motion.form
+            action="mailto:nivesh.shrestha.94@gmail.com"
+            method="POST"
+            encType="text/plain"
             className="bg-white p-8 rounded-2xl shadow-lg space-y-4"
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -65,6 +66,7 @@ const Contact = () => {
               <label className="block text-left font-medium mb-1">Name</label>
               <input
                 type="text"
+                name="name"
                 placeholder="Your Name"
                 className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"
               />
@@ -73,6 +75,7 @@ const Contact = () => {
               <label className="block text-left font-medium mb-1">Email</label>
               <input
                 type="email"
+                name="email"
                 placeholder="Your Email"
                 className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"
               />
@@ -80,6 +83,7 @@ const Contact = () => {
             <div>
               <label className="block text-left font-medium mb-1">Message</label>
               <textarea
+                name="message"
                 placeholder="Write your message..."
                 rows={5}
                 className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"
