@@ -56,7 +56,7 @@ const About = () => {
             Frontend Developer skilled in creating
             intuitive digital experiences. I craft web prototypes, logos, and visual designs that
             truly engage users. I have also learned the MERN Stack
-            (MongoDB, Express.js, ReactJS, Node.js) through Codded.
+            (MongoDB, Express.js, ReactJS, Node.js) through Codeed Inc.
           </motion.p>
 
           <motion.p
