@@ -1,0 +1,22 @@
+# Netlify configuration: publish directory and headers for proper MIME types
+
+[build]
+  # Vite default output is `dist`. If your Netlify publish directory is different,
+  # change this value in Netlify UI or here.
+  publish = "dist"
+  command = "npm run build"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Content-Type = "application/javascript; charset=UTF-8"
+
+[[headers]]
+  for = "/*.mjs"
+  [headers.values]
+    Content-Type = "application/javascript; charset=UTF-8"
+
+[[headers]]
+  for = "/*.wasm"
+  [headers.values]
+    Content-Type = "application/wasm"
