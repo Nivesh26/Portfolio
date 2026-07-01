@@ -1,10 +1,12 @@
 import React from 'react'
 import Header from '../Components/Header'
+import Hero from '../Components/Hero'
 
 const Home = () => {
   return (
-    <div className='bg-red-500'>
+    <div>
         <Header />
+        <Hero />
     </div>
   )
 }
