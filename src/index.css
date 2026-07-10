@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+#ci-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  background: #111;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+}
+
+@media (pointer: coarse) {
+  #ci-cursor {
+    display: none;
+  }
+}

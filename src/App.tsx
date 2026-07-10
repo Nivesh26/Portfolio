@@ -1,13 +1,14 @@
-import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Pages/Home'
+import CustomCursor from './Components/CustomCursor'
 
 const App = () => {
   return (
     <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<Home />} />
-    </Routes>
+      <CustomCursor />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </BrowserRouter>
   )
 }
