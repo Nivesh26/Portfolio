@@ -12,7 +12,10 @@ const Header = () => {
           Contact
         </a>
         <a
-          href="#resume"
+          href="/Nivesh_Shrestha_Resume.pdf"
+          download="Nivesh_Shrestha_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="rounded-full bg-[#14171C] px-4 py-2 text-white transition-transform hover:scale-[1.03]"
         >
           Resume
