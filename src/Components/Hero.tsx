@@ -43,8 +43,8 @@ const Hero = () => {
           </h1>
         </div>
 
-        <div className="hero-right hidden max-w-[250px] md:block lg:max-w-[280px]">
-          <p className="text-right font-[Manrope] text-[14px] leading-[1.75] font-medium text-[#14171C]/90 lg:text-[15px]">
+        <div className="hero-right hidden max-w-[300px] md:block lg:max-w-[350px]">
+          <p className="text-right font-[Manrope] text-[16px] leading-[1.7] font-medium text-[#14171C]/90 md:text-[17px] lg:text-[19px]">
             Hi, I&apos;m Nivesh Shrestha — a UI/UX and frontend developer
             passionate about creating seamless digital experiences that connect
             and convert.
