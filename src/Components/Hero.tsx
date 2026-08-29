@@ -12,7 +12,7 @@ const Hero = () => {
       {/* Background name */}
       <p
         aria-hidden
-        className="hero-name pointer-events-none absolute top-[14%] left-1/2 z-0 flex w-[96%] -translate-x-1/2 justify-center gap-[0.28em] text-center font-['Archivo_Black'] text-[clamp(2.6rem,9vw,7.25rem)] leading-none tracking-[-0.045em] text-[#14171C]/90 uppercase select-none"
+        className="hero-name pointer-events-none absolute top-[16%] left-1/2 z-0 flex w-[96%] -translate-x-1/2 justify-center gap-[0.28em] text-center font-['Archivo_Black'] text-[clamp(1.8rem,6.2vw,5.0rem)] leading-none tracking-[-0.045em] text-[#14171C]/90 uppercase select-none"
       >
         <span>NIVESH</span>
         <span>SHRESTHA</span>
