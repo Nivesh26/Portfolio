@@ -23,7 +23,7 @@ const Hero = () => {
         <img
           src={niveshImage}
           alt="3D illustration of Nivesh Shrestha"
-          className="h-[min(80vh,740px)] w-auto max-w-[min(90vw,540px)] object-contain object-bottom"
+          className="h-[min(86vh,820px)] w-auto max-w-[min(95vw,620px)] object-contain object-bottom"
         />
       </div>
 
